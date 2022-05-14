@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+## Recoil 등장 배경
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+|      | Redux, Mobx (외부 상태 관리 라이브러리)                                                                                                                                                                             | Context API                                              | Recoil                                                                                         |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| 장점 | 상태 관리 용이                                                                                                                                                                                                      | 컴포넌트간 간격이 없기에 전역적이고 간단한 데이터에 용이 | hook을 사용한 사람에게 배우기 쉬움. 비동기 데이터 흐름을 위한 내장 솔루션 제공.                |
+| 단점 | store는 리액트에서 외부 요인 취급되어 구성 위해 많은 코드 필요. 비동기 데이터 처리, 계산된 값 캐시 불가. 이를 해결하기 위해 또다른 라이브러리 사용해야. selector가 동적인 prop 받아야하면 정확한 memoization 어려움 | 반복적이고 복잡한 업데이트에 사용할 경우 비효율적.       | Hooks을 통해서만 사용 가능. 디버깅 도구 지원 미미. 프로덕션 레벨에서 사용하기에는 부담이 있음. |
 
-## Available Scripts
+## Recoil 기본기
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **atom**: state
+- **useRecoilState**: atom 값 업데이트 가능. useState hook과 동일한 방식으로 사용.
+- **useRecoilValue**: [value, setValue] 중 value(atom값)만 반환
+- **useSetRecoilState**: setter 함수만 반환
+- **selector**: 파생된 상태(==상태의 변화)의 일부 나타냄. atom의 상태에 의존하는 동적인 데이터 생성.
