@@ -1,11 +1,5 @@
-import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from "recoil";
-import Counter from "./Counter";
+import { RecoilRoot } from "recoil";
+import Counter from "./Component/Counter";
 
 function App() {
   return (
