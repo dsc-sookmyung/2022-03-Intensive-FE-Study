@@ -1,10 +1,6 @@
 import React from "react";
-import { atom, useRecoilState, useRecoilValue } from "recoil";
-
-const countState = atom({
-  key: "countState",
-  default: 0,
-});
+import { useRecoilState, useRecoilValue } from "recoil";
+import { countState } from "./countState";
 
 const Counter = () => {
   const [count, setCount] = useRecoilState(countState);
