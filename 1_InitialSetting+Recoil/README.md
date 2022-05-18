@@ -10,16 +10,14 @@ ES는 EcmaScript(=Js)로서 Ecma재단에서 만든 Script Specification을 의�
 - 정적 분석: 프로그램을 실행하지 않고 코드 분석
 
 이를 도와주는 것이 Linter인데, 코드를 정적으로 분석해서 프로그램 실행 전에 코딩 컨벤션에 맞지 않는 내용을 검출해준다.
-
-![출처: [https://eslint.org/](https://eslint.org/)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e100f7fe-e0cb-4cce-956b-67d341968f40/스크린샷_2022-05-08_오후_4.32.03.png)
+<img width="1194" alt="스크린샷 2022-05-08 오후 4 32 03" src="https://user-images.githubusercontent.com/86053064/168998812-74cff6eb-a129-4a39-85d7-dc58687b6e34.png">
 
 출처: [https://eslint.org/](https://eslint.org/)
 
 constant는 재선언, 재할당이 불가능한데 같은 이름의 상수를 재선언 했을 경우에 lint가 알려준다.
 
 # Prettier
-
-![출처: [https://prettier.io/playground/](https://prettier.io/playground/)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76cf0853-b726-4ee8-a035-b651f8784458/스크린샷_2022-05-08_오후_4.35.08.png)
+<img width="1440" alt="스크린샷 2022-05-08 오후 4 35 08" src="https://user-images.githubusercontent.com/86053064/168999066-5bdfff56-67bc-4728-8ead-86be17ae9dfc.png">
 
 출처: [https://prettier.io/playground/](https://prettier.io/playground/)
 
@@ -45,8 +43,7 @@ prettier을 사용하면 linter가 띄워주는 formatting 관련 경고들이 �
 # Stylelint
 
 css 린트 툴로, css/scss/less에서 style 구문을 린팅한다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/82d59343-1941-40f5-9b43-909ff9b314fe/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/86053064/168999189-c84d9597-a136-43cb-b45f-abf5f82389b1.png)
 
 VS Code 확장 툴로 설치하고 settings.json에서 사용 여부를 설정할 수 있다.
 
