@@ -101,7 +101,7 @@ Babel은 ES6+ 버전 이상의 자바스크립트나 JSX, 타입 스크립트 �
 
 개발을 진행하면서 간혹 최신 브라우저에서 동작하는 기능을 다른 브라우저나 이전 버전의 브라우저에서 구현해야 하는 경우, 기능 자체를 생략하거나 단순화해야 하는 상황이 발생하는데 이는 코드 일관성을 해칠 수 있으면 협업 과정에 문제를 야기할 수 있으므로 Babel을 사용함
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a61dbebc-5967-40f6-80d1-4b914d39b7e0/Untitled.png)
+[![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a61dbebc-5967-40f6-80d1-4b914d39b7e0/Untitled.png)](https://www.notion.so/Webpack-babel-fe6e7c6165134aa68a8ce6a10dae39d7#00481596bd6e4949b2a9c0fe2d7734c1)
 
 출처 : [Babel 사이트](https://babeljs.io/)
 
