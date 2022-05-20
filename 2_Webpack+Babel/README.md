@@ -80,7 +80,7 @@ webpack은 앤트리 포인트가 의존하는 모든 모듈과 라이브러리�
     ```
     
 
-- Mode : `development`, `production` 또는 `none`으로 설정하면 webpack에 내장된 환경별 최적화를 활성화 할 수 있다
+- **Mode** : `development`, `production` 또는 `none`으로 설정하면 webpack에 내장된 환경별 최적화를 활성화 할 수 있다
 기본값은 `production`
     
     ```jsx
@@ -94,7 +94,7 @@ webpack은 앤트리 포인트가 의존하는 모든 모듈과 라이브러리�
 
 Babel은 ES6+ 버전 이상의 자바스크립트나 JSX, 타입 스크립트 코드를 하위 버전의 자바 스크립트 코드로 변환시켜 IE나 다른 브라우저에서 동작할 수 있도록 해준다.
 
-### Babel을 사용하는 이유
+## Babel을 사용하는 이유
 
 - 크로스 브라우징
 : 플랫폼이나 각 브라우저의 랜더링 엔진의 차이로 보이는 모습이 다른 경우가 있는 데, 최적화 작업을 통해 기존에 의도한 대로 보이도록 하는 작업
@@ -105,7 +105,7 @@ Babel은 ES6+ 버전 이상의 자바스크립트나 JSX, 타입 스크립트 �
 
 출처 : [Babel 사이트](https://babeljs.io/)
 
-### Babel 설치
+## Babel 설치
 
 ```jsx
 yarn add -D @babel/core @babel/cli
@@ -114,13 +114,13 @@ yarn add -D @babel/core @babel/cli
 - @bable/core : Babel을 사용하는데 필요한 패키지
 - @babel/cli : 터미널에서 커맨드를 입력해서 Babel을 사용하기 위한 패키지
 
-### 작성했던 코드에 Babel을 적용하는 방법
+## 작성했던 코드에 Babel을 적용하는 방법
 
 ```jsx
 npx babel <파일명/디렉토리명>
 ```
 
-### Preset 설정
+## Preset 설정
 
 - preset : 필요한 플러그인들을 목적에 따라 세트로 묶어놓은 것
 
@@ -150,7 +150,7 @@ module.exports = {
 }
 ```
 
-### Polyfill
+## Polyfill
 
 폴리필은 최신 ECMAScript 환경을 만들기 위해 코드가 실행되는 환경에 존재하지 않는 빌트인, 메소드 등을 추가하는 역할
 
