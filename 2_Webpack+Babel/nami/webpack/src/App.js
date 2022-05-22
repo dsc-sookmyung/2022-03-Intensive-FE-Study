@@ -2,7 +2,7 @@ import React from "react";
 import Counter from "./Counter";
 import { useRecoilValue } from "recoil";
 import { CountState } from "./atoms";
-import "./App.css"
+//import "./App.css"
 
 function App() {
   const count = useRecoilValue(CountState);
