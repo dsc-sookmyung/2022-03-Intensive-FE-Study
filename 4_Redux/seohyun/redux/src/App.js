@@ -1,6 +1,7 @@
 import React from "react";
 import { Counter } from "./features/counter/Counter";
 import "./App.css";
+import CounterContainer from "./components/CounterContainter";
 import TodosContainer from "./components/TodosContainer";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Counter />
+        <CounterContainer />
         <TodosContainer />
         {/* <p>
           Edit <code>src/App.js</code> and save to reload.
