@@ -1,0 +1,12 @@
+button {
+    background-color: blue;
+    color: red;
+    width: 30px;
+    border: none;
+    box-shadow: 1rem;
+    border-radius: 2px;
+  }
+  .button-wrapper {
+    display: flex;
+    gap: 10px;
+  }
